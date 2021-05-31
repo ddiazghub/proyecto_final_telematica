@@ -18,12 +18,15 @@
             <input type="text" placeholder="Nombre" name="nombre_x">
             <input type="text" placeholder="Apellido" name="apellido_x">
             <input type="int" placeholder="Cedula"  name="cedula_x">
-            <input type="text" placeholder="Usuario_Y"  name="usuario_x">
-            <input type="password" placeholder="Contrasena" name="contrasena_x">
+            <input type="text" placeholder="Usuario"  name="usuario">
+            <input type="password" placeholder="Contrasena" name="contraseña">
             
-            <select>
-                <option>Ayudante</option>
-                <option>Medico</option>
+            <select name = "Rol">
+            
+                <option value="ayudante">Ayudante</option>
+
+                <option value="medico">Medico</option>
+                
             </select>
             
             <button>Entrar</button>
