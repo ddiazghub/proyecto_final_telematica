@@ -13,7 +13,7 @@ $Rol= $_POST['Rol'];
 
 $query = "";
 
-if(strcmp($Rol, "ayudante")){
+if(($Rol == "ayudante")){
   
     $query = "INSERT INTO ayudantes(nombre_x, apellido_x, cedula_x, usuario, contraseña)
     VALUES('$nombre_x', '$apellido_x', '$cedula_x', '$usuario', '$contraseña')";

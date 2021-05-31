@@ -18,13 +18,13 @@ $filas = mysqli_num_rows($resultado);
 
 if($filas){
   
-    header("location:registro.php");
+    header("location:registro_de_usuarios.html");
    
 
 }else{
     ?>
     <?php
-    include("validar.php");
+    include("login-administrador.html");
 
   ?>
   <h1 class="bad">ERROR DE AUTENTIFICACION</h1>
