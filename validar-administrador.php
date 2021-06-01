@@ -5,9 +5,6 @@ $contraseña=$_POST['contraseña'];
 session_start();
 $_SESSION['usuario']=$usuario;
 
-
-$conexion=mysqli_connect("localhost","root","12345","login");
-
 $consulta="SELECT*FROM administradores where usuario='$usuario' and contraseña='$contraseña'";
 $resultado=mysqli_query($conexion,$consulta);
 
