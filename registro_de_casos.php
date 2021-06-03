@@ -18,7 +18,7 @@ if ($Resultados == "Positivo") {
     $Resultados = "En Tratamiento Casa";
 }
 
-$query = "INSERT INTO casos(nombre_x, apellido_x, cedula_x, Sexo, fecha_de_nacimiento, direccion_de_residencia, direccion_de_trabajo, Estado, fecha_de_examen)
+$query = "INSERT INTO casos(nombre_x, apellido_x, cedula_x, Sexo, fecha_de_nacimiento, direccion_de_residencia, direccion_de_trabajo, estados, fechas_estados)
                     VALUES('$nombre_x', '$apellido_x', '$cedula_x', '$Sexo', '$fecha_de_nacimiento', '$direccion_de_residencia', '$direccion_de_trabajo', '$Resultados', '$fecha_de_examen')";
 
 $ejecutar = mysqli_query($conexion ,$query);

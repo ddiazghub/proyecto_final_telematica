@@ -6,17 +6,15 @@
     <title>login2</title>
 </head>
 <body>
-   <form action="gestionar_caso.php" method="get">
+   <form action="busqueda.php" method="get">
 
-    <h1>Gestionar caso</h1>
+    <h1>Buscar caso</h1>
     <p><input type="text" placeholder="Consultar caso" name="valor"></p>
     <p>Buscar por:</p>
     <p><input type="radio" id="id_caso" name="consulta" value="id_x">
     <label for="id_caso">ID de Caso</label><br>
     <input type="radio" id="cedula_paciente" name="consulta" value="cedula_x">
     <label for="cedula_paciente">Cédula del Paciente</label><br>
-    <input type="radio" id="nombre_paciente" name="consulta" value="nombre_x">
-    <label for="nombre_paciente">Nombre del Paciente</label></p>
     <input type="submit" value="Buscar">
 
    </form> 
