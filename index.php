@@ -53,7 +53,6 @@ if ($resultado) {
         $estados = array($estados);
         $fechas_estados = array($fechas_estados);
       }
-      echo $estados[count($estados) - 1];
       if ($estados[count($estados) - 1] == "Negativo") {
         $casos_negativos++;
       } else {
@@ -84,9 +83,6 @@ if ($resultado) {
     foreach ($f_casos as $fecha) {
       $index = array_search($fecha, $fechas_casos);
       $casos_dia[$index]++;
-    }
-    for ($i = 0; $i < count($fechas_casos); $i++) {
-      echo "['".$fechas_casos[$i]."', ".$casos_dia[$i]."], <br>";
     }
   } else {
       echo "El caso no existe";
